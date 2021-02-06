@@ -1,0 +1,469 @@
+/*
+
+ESTILOS GLOBALES
+
+*/
+
+/* #region EstilosGlobales */
+
+[class*="col-"]
+{
+    float: left;
+    padding: 10px;
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box; /* Esta propiedad permite modificar el borde de los objetos sin modificar las dimensiones finales */
+    text-align: center;
+    list-style: none;
+}
+
+.contenedor
+{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+.fila
+{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        clear: both;
+}
+body
+{
+    background-image: url(img/1000030.jpg);
+}
+/* #endregion EstilosGlobales */
+
+/* - - - - -  SECCION PRINCIPAL - - - - - */
+header #logo
+{
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+header center p
+{
+    position: relative;
+    padding-left: 10px;
+    text-align: center;
+    width: 42px;
+    margin: 0px auto;
+    line-height: 42px;
+    color: white;
+    border-radius: 100%;
+}
+header center#red1 p
+{  
+    background: blue;
+}
+header center#red2 p
+{
+    background: cyan;
+}
+header center#red3 p
+{
+    background: purple;
+}
+
+/* - - - - - - SEGUNDA SECCION (NAVBAR) */
+nav ul li
+{
+    text-align: center;
+    padding: 10px;
+}
+nav ul li a
+{
+    background: cornflowerblue;
+    display: block;
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+    color: white;
+    line-height: 48px;
+}
+
+nav ul li a:hover
+{
+    background-color: rgba(26, 73, 160, 0.856);
+}
+nav ul li a:active
+{
+    background-color: rgba(15, 50, 116, 0.856);
+}
+/* - - - - - - - TERCERA SECCION(IMAGENES) */
+
+#seccion1 h1
+{
+    font-family: 'Carter One', cursive;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+#seccion1 p
+{
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'Acme', sans-serif;
+}
+
+.demonios
+{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+#slot1
+{
+    background-color: rgba(29, 0, 56, 0.541);
+    color: white;
+}
+#slot2
+{
+    background-color: rgba(43, 42, 42, 0.664);
+    color: white;
+}
+#slot3
+{
+    background-color: rgba(99, 38, 4, 0.671);
+    color: white;
+}
+
+/* - - - - - CUARTA SECCION (ARTICLE)- - - - - -  */
+
+#seccion2 aside
+{
+    background-color: rgba(0, 0, 0, 0.829);
+    background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+}
+#seccion2 aside ul li
+{
+    background-color: rgba(146, 0, 0, 0.493);
+    color:  white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px 20px; 
+}
+#seccion2 aside ul li:hover
+{
+    background-color: rgba(110, 5, 5, 0.459);
+    cursor: pointer;
+}
+#seccion2 aside ul li:active
+{
+    background-color: rgba(59, 2, 2, 0.5);
+}
+#seccion2 aside ul li a
+{
+    color:  white;
+    font-family: 'Carter One', cursive;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px 20px; 
+}
+
+#seccion2 article img
+{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 250;
+    height: 230px;
+}
+
+#seccion2 article p
+{
+    text-align: justify;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    font-size: 35px;
+}
+
+#seccion2 aside#registro h1
+{
+    color: white;
+    font-size: 40px;
+    font-family: 'Carter One', cursive;
+    padding: 10px;
+    margin-bottom: 15px;
+    user-select: none;
+}
+#seccion2 aside#registro input
+{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Carter One', cursive;
+    
+}
+#seccion2 aside#registro input[type="email"]
+{
+    background-image: url(/img/email.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-position-x: 97%;
+}
+#seccion2 aside#registro input[type="password"]
+{
+    background-image: url(/img/house-key.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-size:contain;
+    background-position-x: 97%;
+}
+#seccion2 aside#registro input[type="submit"]
+{
+    background-color: rgb(187, 187, 187);
+    border: 10px dashed #1b0d14;
+}
+#seccion2 aside#registro input[type="submit"]:hover
+{
+    background-color: rgb(145, 143, 143);
+    cursor: pointer;
+}
+#seccion2 aside#registro input[type="submit"]:active
+{
+    background-color: rgb(116, 115, 115);
+}
+
+/* - - - - - ULTIMA SECCION (FOOTER) - - - - */
+footer
+{
+    color: white;
+    font-size: 40px;
+}
+/* #region MediaQuery  */
+@media(min-width:1200px) /* - - - - - - - - @media permite obtener informacion del lugar donde se este visualizando el archivo, en este caso el ancho de la pantalla  */
+{
+    .col-lg-12
+    {
+        width: 100% ;
+    }
+    .col-lg-11
+    {
+        width: 91.66%;
+    }
+    .col-lg-10
+    {
+        width: 83.33%;
+    }
+    .col-lg-9
+    {
+        width: 75%;
+    }
+    .col-lg-8
+    {
+        width: 66.66666%;
+    }
+    .col-lg-7
+    {
+        width: 58.3333%;
+    }
+    .col-lg-6
+    {
+        width: 50% ;
+    }
+    .col-lg-5
+    {
+        width: 41.6666%;
+    }
+    .col-lg-4
+    {
+        width: 33.33% ;
+    }
+    .col-lg-3
+    {
+        width: 25%;
+    }
+    .col-lg-2
+    {
+        width: 16.66666%;
+    }
+    .col-lg-1
+    {
+        width: 8.33333%;
+    }
+    .col-lg-0
+    {
+        display: none;
+    }
+}
+
+@media(max-width:1199px) and (min-width:992px) /* - - - - - - - - @media permite obtener informacion del lugar donde se este visualizando el archivo, en este caso el ancho de la pantalla  */
+{
+    .col-md-12
+    {
+        width: 100% ;
+    }
+    .col-md-11
+    {
+        width: 91.66%;
+    }
+    .col-md-10
+    {
+        width: 83.33%;
+    }
+    .col-md-9
+    {
+        width: 75%;
+    }
+    .col-md-8
+    {
+        width: 66.66666%;
+    }
+    .col-md-7
+    {
+        width: 58.3333%;
+    }
+    .col-md-6
+    {
+        width: 50% ;
+    }
+    .col-md-5
+    {
+        width: 41.6666%;
+    }
+    .col-md-4
+    {
+        width: 33.33% ;
+    }
+    .col-md-3
+    {
+        width: 25%;
+    }
+    .col-md-2
+    {
+        width: 16.66666%;
+    }
+    .col-md-1
+    {
+        width: 8.33333%;
+    }
+    .col-md-0
+    {
+        display: none;
+    }
+}
+@media(max-width:991px) and (min-width:768px) /* - - - - - - - - @media permite obtener informacion del lugar donde se este visualizando el archivo, en este caso el ancho de la pantalla  */
+{
+    .col-sm-12
+    {
+        width: 100% ;
+    }
+    .col-sm-11
+    {
+        width: 91.66%;
+    }
+    .col-sm-10
+    {
+        width: 83.33%;
+    }
+    .col-sm-9
+    {
+        width: 75%;
+    }
+    .col-sm-8
+    {
+        width: 66.66666%;
+    }
+    .col-sm-7
+    {
+        width: 58.3333%;
+    }
+    .col-sm-6
+    {
+        width: 50% ;
+    }
+    .col-sm-5
+    {
+        width: 41.6666%;
+    }
+    .col-sm-4
+    {
+        width: 33.33% ;
+    }
+    .col-sm-3
+    {
+        width: 25%;
+    }
+    .col-sm-2
+    {
+        width: 16.66666%;
+    }
+    .col-sm-1
+    {
+        width: 8.33333%;
+    }
+    .col-sm-0
+    {
+        display: none;
+    }
+}
+@media(max-width:767px) /* - - - - - - - - @media permite obtener informacion del lugar donde se este visualizando el archivo, en este caso el ancho de la pantalla  */
+{
+    .col-xs-12
+    {
+        width: 100% ;  
+    }
+    .col-xs-11
+    {
+        width: 91.66%;
+    }
+    .col-xs-10
+    {
+        width: 83.33%;
+    }
+    .col-xs-9
+    {
+        width: 75%;
+    }
+    .col-xs-8
+    {
+        width: 66.66666%;
+    }
+    .col-xs-7
+    {
+        width: 58.3333%;
+    }
+    .col-xs-6
+    {
+        width: 50% ;
+    }
+    .col-xs-5
+    {
+        width: 41.6666%;
+    }
+    .col-xs-4
+    {
+        width: 33.33% ;
+    }
+    .col-xs-3
+    {
+        width: 25%;
+    }
+    .col-xs-2
+    {
+        width: 16.66666%;
+    }
+    .col-xs-1
+    {
+        width: 8.33333%; 
+    }
+    .col-xs-0
+    {
+        display: none;
+    }
+}
+/* #endregion MediaQuery */
+
